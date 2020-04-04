@@ -14,7 +14,7 @@ const SignupScreen= ({ navigation }) => {
     
 
    
-    //console.log(state);
+    console.log(state);
 
    
     

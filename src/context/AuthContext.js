@@ -45,7 +45,7 @@ const signup = dispatch =>  async ( { email , password } ) => {
             // make to another state
             // failure occurs
         try {
-            const response = await trackerApi.post('/signin', {email, password});
+            const response = await trackerApi.post('/signup', {email, password});
             
             await AsyncStorage.setItem('token' , response.data.token);
             dispatch({ type: 'signin' , payload: response.data.token});

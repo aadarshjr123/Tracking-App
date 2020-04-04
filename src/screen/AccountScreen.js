@@ -5,7 +5,7 @@ import { SafeAreaView} from 'react-navigation';
 import Spacer from '../components/Spacer';
 import { Context as AuthContext } from '../context/AuthContext';
 import AuthForm from '../components/AuthForm';
-
+import { Ionicons } from '@expo/vector-icons';
 
 const AccountScreen= ({navigation}) => {
     const {signout } = useContext(AuthContext);
@@ -23,6 +23,10 @@ const AccountScreen= ({navigation}) => {
             <Text style={styles.text}>From Tracker.</Text>
         </SafeAreaView>
     );
+};
+
+AccountScreen.navigationOptions ={
+    tabBarIcon: <Ionicons name="md-person" size={20}/>
 };
 
 
