@@ -1,6 +1,2 @@
 # Tracking-App
-Basics of react native
-
-usage of Maps and how tracking works
-
-only for self-reference
+ Its basically an mobile application which is created using react native and firebase,  where we can sign up and keep track of the locations we want to go as well as save it for future use.
